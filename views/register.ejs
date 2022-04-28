@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>          Acccount Register        </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.2" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>SIGN UP</h1>
+      <% if (messages) { %>
+      <p><%= messages.error %></p>
+      <% } %>
+      <form action="/register" method="POST">
+        <h5 style=" font-size: 25px;font-style:oblique;"> Name <br> </h5>
+        <input type="name" name="name" />
+        <h2 style=" font-size: 25px;font-style: oblique;">User Name <br> </h2>
+        <input type="email" name="email"  placeholder="leodoan@gmail.com"/>
+        
+        <h3 style=" font-size: 25px;font-style: oblique;"> Password <br> </h3>
+        <input type="password" name="password" />
+        <button>SIGN UP</button>
+      </form>
+
+        <h4 style="font-size: 25px;font-style: normal; margin-top: 20px;"> Have An Account Already?
+          <a href="/login"> Login</a>
+        </h4>
+    </div>
+  </body>
+</html>
