@@ -1,3 +1,6 @@
+//check the password when user register or login to account. This code is from DWRCS
+// YouTube channel, reference can be found at README.md
+
 const LocalStrategy = require("passport-local").Strategy;
 const bcrypt = require("bcryptjs");
 
