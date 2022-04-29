@@ -27,6 +27,7 @@
    * For ejs files: buildapp.ejs, contact.ejs, cratemenu.ejs, createReservation.ejs, home.ejs, login.ejs, order.ejs, register.ejs, reservation.ejs.
    * For css files: style.css, stylebuildapp.css, stylecontact.css, stylecreatemenu.css, styleCreateReservation.css, stylefeedback.css, styleOrder.css, stleReservation.css
    * For scripts files: script.js, script1.js, scripts2.js, script3.js, script4.js.
+   * For the home page layout, we got the idea from Easy Tutorials on YouTube [1].
 
  `The sample of structure from these website: HOMEPAGE using EJS`
 ```js
@@ -116,6 +117,7 @@ $(function(){
    * Using The app.post() function routes the HTTP POST requests to the specified path with the specified callback functions.
    * Using The app.put() function routes the HTTP PUT requests to the specified path with the specified callback functions.   
    * Using app.delete() function to delete.
+   * The login/register and check Authenticated is a open-source from DWRCS YouTube channel [2].
 ```js
 app.get("/index", checkAuthenticated, (req, res) => {       
   res.render("index", { name: req.user.name });
@@ -242,3 +244,8 @@ module.exports = User;                                //export module
 
 # Code is Running on
 + http://localhost:3000/
+
+# Reference
+* [1] Easy Tutorials, "How to Make Website Using HTML And CSS | Website Design With HTML And CSS, https://www.youtube.com/watch?v=PgAZ8KzfhO8
+
+* [2] DWRCS, "Building Login and Register system with NodeJS, MongoDB and EJS, https://www.youtube.com/watch?v=qTH0M4pKNZg
